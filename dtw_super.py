@@ -122,8 +122,9 @@ class DTWSuper:
         #print(str(M[1][0]) + ' & ' + str(M[1][1]) + ' & ' + str(M[1][2]) + ' \\\\')
         #print(str(M[2][0]) + ' & ' + str(M[2][1]) + ' & ' + str(M[2][2]) + ' \\\\')
 
-        ret = float(self.knn_utility(M))
-        return ret
+        #ret = float(self.knn_utility(M))
+        #return ret
+        return M
 
     #Utility function for Precision, Recall and F-Measure.
     def knn_utility(self, M):
