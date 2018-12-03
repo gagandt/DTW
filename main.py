@@ -4,12 +4,14 @@ import sys
 import os
 import matplotlib.pyplot as plt
 
-from dtw_super import DTWSuper
+#from dtw_super import DTWSuper
 from univ_data import UNIVdata
 #from data_initialiser import DATA
 #Number of Nearest Neighbours.
 
-d1 = UNIVdata('re')
+
+d1 = UNIVdata(32)
+print(d1.fit())
 
 
 '''f = 4;

@@ -58,7 +58,9 @@ class DTWSuper:
             
             for i in range(1, n):
                 for j in range(1, m):
-                    cost = abs(sequence[i-1] - int(test[j-1]))
+                    
+                    cost = np.linalg.norm(np.array(sequence[i-1]) - np.array(test[j-1]))
+                    print(cost)
                     mat[i][j] = cost + min(mat[i-1][j], mat[i-1][j-1], mat[i][j-1])
             
             knn_array = np.append(knn_array, mat[n-1][m-1])
