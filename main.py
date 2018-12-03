@@ -5,9 +5,14 @@ import os
 import matplotlib.pyplot as plt
 
 from dtw_super import DTWSuper
-from data_initialiser import DATA
+from univ_data import UNIVdata
+#from data_initialiser import DATA
 #Number of Nearest Neighbours.
-f = 4;
+
+d1 = UNIVdata('re')
+
+
+'''f = 4;
 
 a1 = []
 a2 = []
@@ -45,3 +50,4 @@ for i in range(0, 3):
     #plt.yticks(a1,a1)
     
     plt.show()
+'''
